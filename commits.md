@@ -81,3 +81,18 @@ git revert <commit_hash>
     ```bash
     git reset --hard HEAD~1
     ```
+
+---
+
+## 3. Troubleshooting: "Where is my commit?"
+
+A common point of confusion:
+
+* **`git log`**: Shows only *saved* history (the past).
+* **`git status`**: Shows what you are working on right now (the present).
+
+If you make changes to a file and run `git log`, **you will NOT see those changes**. You must first:
+
+1. **Add** them: `git add .`
+2. **Commit** them: `git commit -m "My new changes"`
+3. **Then** run `git log` to see your new commit.
