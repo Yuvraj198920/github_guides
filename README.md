@@ -9,8 +9,9 @@ Welcome to the comprehensive guide for using the GitHub CLI (`gh`), tailored for
 * **[Repositories & Starting from Scratch](./repositories.md)**: Create new repos, clone, fork, and sync.
 * **[Issues & Milestones](./issues_and_milestones.md)**: Manage issues, filters, and release recipes.
 * **[Pull Requests & Branching](./pr_and_branching.md)**: PR workflows, code reviews, and issue-driven branching.
-* **[Project Planning](./projects.md)**: Managing GitHub Projects V2.
-* **[Advanced Usage & CI](./advanced.md)**: API, Config, Aliases, and Actions monitoring.
+* [**Project Planning**](./projects.md): Managing GitHub Projects V2.
+* [**Commits & History**](./commits.md): Search commits with `gh` and manage history with `git`.
+* [**Advanced Usage & CI**](./advanced.md): API, Config, Aliases, and Actions monitoring.
 * **[Cheatsheet](./cheatsheet.md)**: Quick reference table.
 
 ---
@@ -40,8 +41,8 @@ gh auth status
 
 * **Explanation**: Shows which account you are logged into and which configuration is active.
 
-## 3. Tips for `sample-repo`
+## 3. Tips for `GDAL-ZARR-EOPF`
 
-* **Context Awareness**: If you are inside the `sample-repo` directory, you can omit the `--repo sample-repo` flag. `gh` automatically detects the repository from the git remote.
+* **Context Awareness**: If you are inside the `GDAL-ZARR-EOPF` directory, you can omit the `--repo EOPF-Sample-Service/GDAL-ZARR-EOPF` flag. `gh` automatically detects the repository from the git remote.
 * **Filtering**: Since this repo might have specific labels (e.g., `bug`, `enhancement`), use `gh issue list --label "bug"` to focus on what matters.
 * **CI Monitoring**: Use `gh run watch` after pushing changes to see if the CI pipeline passes without leaving your terminal.
